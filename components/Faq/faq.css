@@ -1,0 +1,57 @@
+.faq {
+	background-color: var(--color-gray);
+	min-height: 800px;
+	padding-top: 180px;
+  }
+  
+  .faq__heading {
+	font: bold 4.8rem Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	margin-bottom: 50px;
+	text-align: center;
+  }
+  
+  .faq__questionary {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 30px;
+  }
+  
+  .faq__question {
+	background-color: var(--color-white);
+	border-radius: 10px;
+	box-shadow: -4px 4px 10px var(--color-dark);
+	margin-bottom: 25px;
+	margin: 0px 7px 25px 7px;
+	padding: 15px;
+	width: 467px;
+  }
+
+  .faq__question p, td {
+	font: normal 1.6rem Arial, Helvetica, sans-serif;
+	letter-spacing: 0;
+	margin: 0 0 0 0;
+  }
+  
+  .faq__question td:nth-child(odd) {
+	color: var(--color-red);
+	font-weight: bold;
+	padding-right: 27px;
+  }
+  
+  .faq__question tr:nth-child(odd) > td:nth-child(even) {
+	font-weight: bold;
+	padding-bottom: 20px;
+  }
+  
+  @media (max-width: 999px) {
+	.faq__heading {
+	  font-size: calc(2.5rem + (20 + 20 * 1.0) * ((100vw - 320px) / 1200));
+	}
+	.faq__questionary {
+		justify-content: center;
+	}
+	.faq__question p, td {
+	  font-size: 1.4rem;
+	}
+  }

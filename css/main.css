@@ -1,0 +1,221 @@
+/*! Fonts */
+
+@font-face {
+  font-family: "cambria";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/cambria.woff2") format("woff2"),
+    url("/fonts/cambria.woff") format("woff");
+}
+
+@font-face {
+  font-family: "cambria";
+  font-style: normal;
+  font-weight: bold;
+  src: url("/fonts/cambriab.woff2") format("woff2"),
+    url("/fonts/cambriab.woff") format("woff");
+}
+
+/*! Root */
+
+:root {
+  --color-black: #000000;
+  --color-blue: #0f3f60;
+  --color-dark: #8f8f8f;
+  --color-gray: #f2f2f2;
+  --color-red: #a20d0d;
+  --color-white: #ffffff;
+}
+.black {
+  color: var(--color-black);
+}
+.blue {
+  color: var(--color-blue);
+}
+.dark {
+  color: var(--color-dark);
+}
+.gray {
+  color: var(--color-gray);
+}
+.red {
+  color: var(--color-red);
+}
+.white {
+  color: var(--color-white);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  margin: 0px auto;
+  max-width: 1200px;
+  padding: 0px 10px;
+  width: 100%;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+/*! Adaptive Typography */
+
+body {
+  margin-top: 50px;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: none;
+}
+
+div::-webkit-scrollbar {
+  width: 5px;
+}
+div::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+p {
+  color: var(--color-black);
+  font: normal 1.6rem Arial, Helvetica, sans-serif;
+  letter-spacing: 0.25px;
+  line-height: 30px;
+  margin: 20px 0 20px 0;
+  text-align: left;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-blue);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 4.8rem;
+  margin: 20px 0 40px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 40px 0px 20px 0px;
+}
+
+h3 {
+  color: var(--color-black);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 40px 0px 20px 0px;
+  line-height: 23px;
+}
+
+.heading-big {
+  font-weight: bold;
+  font-size: 4.8rem;
+  margin: 20px 0 40px 0;
+}
+
+.span-bold {
+  font-weight: bold;
+}
+
+.span-italic {
+  font-style: italic;
+}
+
+ol,
+ul {
+  padding-left: 5rem;
+  margin: 20px 0 20px 0;
+}
+
+li {
+  font: normal 1.6rem Arial, Helvetica, sans-serif;
+  letter-spacing: 0.25px;
+  line-height: 30px;
+}
+
+em {
+  font: italic 1.6rem Arial, Helvetica, sans-serif;
+  letter-spacing: 0.25px;
+  line-height: 30px;
+  margin: 20px 0 20px 0;
+}
+
+strong {
+  font: italic bold 1.6rem Arial, Helvetica, sans-serif;
+  letter-spacing: 0.25px;
+  line-height: 30px;
+  color: var(--color-red);
+}
+
+/*! Tracker of Links Style */
+.tracker p {
+  color: var(--color-dark);
+  font: bold 1.6rem Arial, Helvetica, sans-serif;
+  padding: 15px 0 0 0;
+}
+
+.tracker a {
+  color: var(--color-black);
+  transition: color 0.2s;
+}
+
+.tracker a:hover {
+  color: var(--color-red);
+}
+
+/*! Links Style */
+
+a {
+  color: var(--color-dark);
+}
+
+a:hover {
+  color: var(--color-blue);
+}
+
+.block--skewed-left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 86%, 0% 100%);
+}
+
+.block--skewed-right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 86%);
+}
+
+@media (max-width: 1200px) {
+  .tracker p {
+    font-size: calc(1.2rem + (4 + 4 * 0.35) * ((100vw - 320px) / 1200));
+  }
+  p {
+    font-size: calc(1.4rem + (2 + 2 * 0.33) * ((100vw - 320px) / 1200));
+    line-height: calc(23px + (7 + 7 * 0.37) * ((100vw - 320px) / 1200));
+  }
+  h1 {
+    font-size: calc(2.4rem + (24 + 24 * 0.36) * ((100vw - 320px) / 1200));
+  }
+  h2 {
+    font-size: calc(2rem + (4 + 4 * 0.37) * ((100vw - 320px) / 1200));
+  }
+  h3 {
+    font-size: calc(1.7rem + (3 + 3 * 1) * ((100vw - 320px) / 1200));
+  }
+  ol,
+  ul {
+    padding-left: calc(2rem + (30 + 30 * 0.5) * ((100vw - 320px) / 1200));
+  }
+  li {
+    font-size: calc(1.4rem + (2 + 2 * 0.4) * ((100vw - 320px) / 1200));
+    line-height: calc(23px + (7 + 7 * 0.37) * ((100vw - 320px) / 1200));
+  }
+  em {
+    font-size: calc(1.4rem + (2 + 2 * 0.33) * ((100vw - 320px) / 1200));
+    line-height: calc(23px + (7 + 7 * 0.37) * ((100vw - 320px) / 1200));
+  }
+  strong {
+    font-size: calc(1.4rem + (2 + 2 * 0.33) * ((100vw - 320px) / 1200));
+  }
+}

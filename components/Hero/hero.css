@@ -1,0 +1,100 @@
+.hero {
+	background: var(--color-gray);
+	display: flex;
+	height: 554px;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	width: 100%;
+	z-index: 4;
+  }
+  .hero__header {
+	height: 0;
+  }
+  .hero__heading {
+	font: bold 4.8rem Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	margin: 90px 0px 75px 10px;
+	position: relative;
+	transition: all 0.2s;
+	z-index: 2;
+	text-align: left;
+  }
+  .hero__tagline {
+	font: 2.7rem Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	line-height: 40px;
+	margin: 0px 0px 90px 50px;
+	transition: all 0.2s;
+	z-index: 2;
+  }
+  .hero__image {
+	display: block;
+	padding-top: 30px;
+	text-align: right;
+	z-index: 1;
+  }
+  
+  .hero__image img {
+	left: 30px;
+	position: relative;
+	top: -90px;
+  }
+  
+  /*! Button Styles */
+  
+  .btn {
+	background: var(--color-red);
+	border-radius: 45px;
+	box-shadow: -5px 5px 12px var(--color-dark);
+	color: var(--color-white);
+	font: normal 3rem Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	letter-spacing: 2px;
+	margin: 0px 0px 0px 82px;
+	padding: 12px 18px 15px 20px;
+	position: relative;
+	transition: all 0.2s;
+	z-index: 2;
+  }
+  .btn:hover {
+	background: var(--color-blue);
+	color: var(--color-white);
+  }
+  
+  @media (max-width: 1200px) {
+	.hero__heading {
+	  margin: 90px 0px 75px 70px;
+	}
+	.hero__tagline {
+	  margin: 0px 0px 90px 110px;
+	}
+	.btn {
+	  margin: 0px 0px 0px 142px;
+	}
+	.hero__image img {
+	  left: calc(390px - 989 * ((100vw - 764px) / 1200));
+	}
+  }
+  
+  @media (max-width: 767px) {
+	.hero__heading {
+	  font-size: 3.3rem;
+	  margin: 20px 0px 15px 0px;
+	  text-align: center;
+	}
+	.hero__tagline {
+	  display: block;
+	  font: 1.7rem Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	  margin: 0px 0px 60px 0px;
+	  text-align: center;
+	}
+	.btn {
+	  display: flex;
+	  margin: 0 auto;
+	}
+	.hero__image img {
+	  margin-top: calc(40px - 658 * ((100vw - 764px) / 1200));
+	  max-width: 100%;
+	  opacity: 50%;
+	  position: initial;
+	  transform: translateX(30px);
+	}
+  }

@@ -1,0 +1,22 @@
+.article__wrapper h3 {
+  color: var(--color-dark);
+  font: bold 2.4rem Arial, Helvetica, sans-serif;
+}
+
+.article img {
+  display: block;
+  margin: 40px auto;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+@media (max-width: 1200px) {
+
+  .article__wrapper h3 {
+    font-size: calc(2rem + (4 + 4 * 0.37) * ((100vw - 320px) / 1200));
+  }
+  .article img {
+    border-radius: calc(8px + (12 + 12 * 0.37) * ((100vw - 320px) / 1200));
+  }
+
+}

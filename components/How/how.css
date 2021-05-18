@@ -1,0 +1,55 @@
+.how {
+	background-color: var(--color-blue);
+	min-height: 800px;
+	padding-bottom: 40px;
+  }
+  
+  .how__body {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 200px;
+  }
+  
+  .how__image {
+	display: block;
+  }
+  
+  .how__image img {
+	height: 435px;
+	margin: 50px 30px;
+  }
+  
+  .how__headding {
+	font: bold 4.5rem Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	margin-bottom: 50px;
+  }
+  
+  .how p {
+	color: var(--color-white);
+  }
+  
+  .how__text {
+	max-width: 636px;
+	min-height: 550px;
+  }
+  
+  @media (max-width: 900px) {
+	.how__image img {
+	  height: 235px;
+	  margin: 20px 30px;
+	}
+	.how__image {
+	  display: flex;
+	  justify-content: center;
+	}
+	.how__body {
+	  display: block;
+	}
+	.how__text {
+	  max-width: 100%;
+	}
+	.how__headding {
+	  font-size: calc(2.5rem + (20 + 20 * 0.7) * ((100vw - 320px) / 1200));
+	  text-align: center;
+	}
+  }

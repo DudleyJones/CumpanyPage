@@ -1,0 +1,53 @@
+.mblog {
+  min-height: 700px;
+}
+
+.mblog__heading {
+  font: bold 48px Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.mblog__container p {
+  margin: 0 0 50px 0;
+  text-align: left;
+}
+
+/*! Mblog Images */
+
+.mblog__images-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.mblog__container {
+  margin: 0px 10px 0px 0px;
+  width: 364px;
+}
+
+.mblog__container img {
+  width: 364px;
+}
+
+.mblog__container h3 {
+  color: var(--color-blue);
+  font: bold 2.4rem Arial, Helvetica, sans-serif;
+  margin: 12px 0px 30px 0px;
+  text-align: left;
+}
+
+@media screen and (max-width: 496px) {
+  .mblog__heading {
+    font-size: 2.4rem;
+  }
+  .mblog__container h3 {
+    font-size: 2rem;
+  }
+  .mblog__container {
+    width: 294px;
+  }
+  .mblog__container img {
+    width: 294px;
+  }
+}

@@ -1,0 +1,155 @@
+  .contacts {
+	background-color: var(--color-white);
+	min-height: 700px;
+	padding: 0 0 50px 0;
+  }
+  
+  .contacts h1 {
+	text-align: center;
+  }
+  
+  .contacts-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+  }
+  
+  .contacts__info-container {
+	margin: 0px 0px 50px 0px;
+  }
+  
+  .contacts__info-container h2 {
+	  margin-top: 25px;
+  }
+
+  .contacts__info-container h2:first-child {
+	margin: 0;
+  }
+  
+  .contacts__form-container {
+	max-width: 450px;
+	width: 100%;
+  }
+  
+  /*! Form Style */
+  
+  .contacts__form-group {
+	margin-bottom: 2rem;
+  }
+  
+  .contacts__form-group_alt {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+  }
+  
+  .contacts__form-container label {
+	display: block;
+	font: bold 1.6rem Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	margin: 0 0 6px 6px;
+  }
+  
+  .contacts__form-container input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+	border-radius: 15px;
+	border: 1px solid var(--color-dark);
+	padding: 1rem;
+	resize: none;
+	transition: box-shadow 0.2s;
+	width: 100%;
+  }
+  
+  .contacts__form-container input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+	box-shadow: 0 0 0 4px var(--color-gray);
+	padding: 1rem;
+  }
+  
+  .contacts__form-container input[type="file"] {
+	color: var(--color-red);
+  }
+
+  .contacts__form-container input[type="radio"] {
+	  margin: 0 2px 0 10px;
+  }
+
+  .contacts__form-group_alt p {
+	  margin: 0 0 0px 6px;
+	  display: inline-block;
+	  width: 180px;
+  }
+  
+  .contacts__form-container button {
+	background: var(--color-red);
+	border-radius: 25px;
+	border: 0;
+	color: var(--color-white);
+	font: 2rem Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	height: 50px;
+	letter-spacing: 2px;
+	padding: 1rem 5rem;
+  }
+  
+  /* Location Style */
+  
+  .contacts__location {
+	width: 100%;
+  }
+  
+  .contacts__location h2 {
+	text-align: center;
+  }
+  
+  .contacts__location-container {
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 30px;
+	max-height: 796px;
+	overflow: auto;
+	width: 100%;
+  }
+  
+  .contacts__location-column {
+	margin-bottom: 30px;
+	min-width: 19%;
+	text-align: center;
+	width: 200px;
+  }
+  .contacts__location-column ul {
+	text-align: left;
+	padding-left: 0;
+  }
+  
+  .contacts__location-column li {
+	font: 1.6rem Arial, Helvetica, sans-serif;
+	letter-spacing: 0.25px;
+	list-style-type: none;
+  }
+  
+  .contacts__location-heading p {
+	color: var(--color-blue);
+	font: bold 1.8rem Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	margin: 0 0 10px 0;
+  }
+  
+  .contacts__location-heading_alt p {
+	font: bold 1.6rem Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  
+  @media screen and (max-width: 408px) {
+	.contacts-row {
+	  justify-content: center;
+	}
+	.contacts__form-group_alt {
+	  display: block;
+	  text-align: center;
+	}
+	.contacts__form-container button {
+	  margin-top: 20px;
+	}
+  }

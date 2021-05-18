@@ -1,0 +1,23 @@
+{
+  "name": "couch-cleaning-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "file-loader": "^6.2.0",
+    "next": "^9.5.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass": "^1.32.8",
+    "url-loader": "^4.1.1"
+  }
+}

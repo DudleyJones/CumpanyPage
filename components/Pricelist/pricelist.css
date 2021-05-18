@@ -1,0 +1,134 @@
+.pricelist {
+  background: var(--color-white);
+  min-height: 510px;
+  padding: 0px 0px 100px 0px;
+  margin-bottom: -200px;
+}
+
+.flexible-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*! Heading Style */
+
+.pricelist__heading {
+  font: bold 4.8rem Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/*! Table Style */
+
+.pricelist__table {
+  display: flex;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.two {
+  display: none;
+}
+
+.pricelist__table tr td {
+  font: bold 2.4rem Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-bottom: 6px;
+  padding-top: 6px;
+}
+
+.pricelist__table tr {
+  border-bottom: 3px solid var(--color-gray);
+}
+
+.pricelist__table td:nth-child(odd) {
+  padding-right: 44px;
+}
+
+.pricelist__table td:nth-child(even) {
+  color: var(--color-blue);
+}
+
+.pricelist__table td:nth-child(2) {
+  padding-right: 100px;
+}
+
+.pricelist__table tr:last-child {
+  border-bottom: none;
+}
+
+/*! Discount Styles */
+
+.pricelist__discount-wrapper {
+  width: 371px;
+}
+
+.pricelist__discount {
+  margin-top: 12px;
+  width: 371px;
+}
+
+.pricelist__discount img {
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px var(--color-dark);
+  width: 100%;
+}
+
+.pricelist__text span {
+  font-weight: bold;
+  padding: 0 20px 0 20px;
+}
+
+@media (max-width: 1042px) {
+  .block--skewed-right {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+  }
+  .flexible-container {
+    display: block;
+  }
+  .pricelist__table {
+    justify-content: center;
+  }
+  .pricelist__discount-wrapper {
+    margin: auto;
+  }
+  .pricelist__text p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 667px) {
+  .pricelist {
+    padding: 0px 0px 50px 0px;
+  }
+  .block--skewed-right {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 96%);
+  }
+  .pricelist__table {
+    display: none;
+  }
+  .pricelist__table td:nth-child(2) {
+    padding-right: 0;
+  }
+  .pricelist__table td:nth-child(odd) {
+	padding-right: 111px;
+}
+  .two {
+    display: flex;
+  }
+  .pricelist__heading {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+  }
+  .pricelist__discount-wrapper {
+    width: 280px;
+  }
+  .pricelist__discount {
+    width: 280px;
+  }
+  .pricelist__text p {
+    text-align: center;
+  }
+  .pricelist__text span {
+    padding: 0 0px 0 0px;
+  }
+}
