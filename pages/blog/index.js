@@ -1,4 +1,4 @@
-import '../../css/blog.css'
+import "../../css/blog.css";
 import Layout from "../../components/Layout";
 import Head from "next/head";
 import React, { Fragment } from "react";
@@ -139,4 +139,4 @@ export default function BlogPage(props) {
       </section>
     </Layout>
   );
-}
+};

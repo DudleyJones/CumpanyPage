@@ -696,4 +696,4 @@ export default function FifthArticle(props) {
       </section>
     </Layout>
   );
-}
+};

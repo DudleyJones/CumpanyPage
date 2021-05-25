@@ -1,5 +1,5 @@
 import "./mblog.css";
-import Link from 'next/link'
+import Link from 'next/link';
 
 export default function Mblog() {
 
@@ -33,9 +33,9 @@ export default function Mblog() {
               <h3>Cleaning cat urine from the couch</h3>
               <p>
                 The acrid smell of cat urine lingers in the room for a long time
-                and over time does not get out, but only gets stronger.
-                Therefore, it is very important to remove it immediately. We
-                will tell you how to remove the smell by your own efforts and
+                and over time doesn't get out, but only gets stronger.
+                Therefore, it is very important to remove it immediately. We'll
+                tell you how to remove the smell by your own efforts and
                 what to do if the urine stain has dried up long ago.
               </p>
             </div>
@@ -59,4 +59,4 @@ export default function Mblog() {
       </div>
     </section>
   );
-}
+};

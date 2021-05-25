@@ -393,4 +393,4 @@ export default function SixthArticle(props) {
       </section>
     </Layout>
   );
-}
+};

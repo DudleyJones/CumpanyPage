@@ -17,8 +17,8 @@ class MyDocument extends Document {
           <script src="../js/script.js"></script>
         </body>
       </Html>
-    )
-  }
-}
+    );
+  };
+};
 
 export default MyDocument;

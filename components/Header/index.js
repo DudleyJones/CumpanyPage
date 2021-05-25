@@ -1,9 +1,7 @@
 import "./header.css";
-import "../../css/blog.css";
-import "../../css/article.css";
-import Link from 'next/link'
+import Link from 'next/link';
 
-export default function Header(){
+export default function Header() {
     return(
 		<header className="header">
       <div className="container">
@@ -62,5 +60,5 @@ export default function Header(){
         </div>
       </div>
     </header>
-	)
-}
+	);
+};

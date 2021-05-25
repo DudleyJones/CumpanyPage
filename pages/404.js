@@ -11,5 +11,5 @@ export default function Custom404() {
 				<p className="error__text">This page does not exist! You will be redirected on Home Page in 5 Seconds. <br />If not redirected automatically click <Link href={'/'}><a>here.</a></Link></p>
 			</div>
 		</>
-	)
-}
+	);
+};

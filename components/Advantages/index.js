@@ -1,5 +1,5 @@
 import "./advantages.css";
-import sprite from '../../public/images/sprite.svg'
+import sprite from '../../public/images/sprite.svg';
 
 export default function Advantages(){
     return(
@@ -71,5 +71,5 @@ export default function Advantages(){
 				</div>
 			</div>
 		</section>
-	)
-}
+	);
+};

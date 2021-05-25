@@ -439,4 +439,4 @@ export default function ThirdArticle(props) {
       </section>
     </Layout>
   );
-}
+};

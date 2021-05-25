@@ -347,4 +347,4 @@ export default function FourthArticle(props) {
       </section>
     </Layout>
   );
-}
+};

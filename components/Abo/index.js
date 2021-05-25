@@ -160,4 +160,4 @@ export default function Abo() {
       </div>
     </section>
   );
-}
+};

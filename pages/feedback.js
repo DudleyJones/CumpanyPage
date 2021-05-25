@@ -1,8 +1,8 @@
+import "../css/feedback.css";
 import Layout from "../components/Layout";
 import Head from "next/head";
 import React, { Fragment } from "react";
 import Link from "next/link";
-import "../css/feedback.css";
 
 export default function Feedback(props) {
   const meta = {
@@ -97,7 +97,7 @@ export default function Feedback(props) {
                         First of all I was surprised that a worker weared a gas
                         mask, eyewear and gloves. I thought that he was about
                         using some rough chemicals but he explainned to me that
-                        it is for my safety against covid virus :) That was
+                        it is for my safety against covid virus :{')'} That was
                         funny but the job was done great and I have no
                         complaints.
                       </p>
@@ -739,4 +739,4 @@ export default function Feedback(props) {
       </section>
     </Layout>
   );
-}
+};

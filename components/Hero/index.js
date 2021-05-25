@@ -1,6 +1,6 @@
 import "./hero.css";
 
-export default function Hero(){
+export default function Hero() {
     return(
 		<section className="hero">
 		<div className="container nopadding">
@@ -20,5 +20,5 @@ export default function Hero(){
 		  </picture>
 		</div>
 	  </section>
-	)
-}
+	);
+};

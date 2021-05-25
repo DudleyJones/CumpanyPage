@@ -381,4 +381,4 @@ export default function SecondArticle(props) {
       </section>
     </Layout>
   );
-}
+};

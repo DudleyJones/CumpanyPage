@@ -2,7 +2,7 @@ import Layout from "../../components/Layout";
 import Head from "next/head";
 import React, { Fragment } from "react";
 import Link from "next/link";
-import '../../css/article.css'
+import '../../css/article.css';
 
 export default function FirstArticle(props) {
   const meta = {
@@ -466,4 +466,4 @@ export default function FirstArticle(props) {
     </section>
     </Layout>
   );
-}
+};

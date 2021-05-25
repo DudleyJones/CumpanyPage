@@ -18,11 +18,11 @@
 	width: 467px;
   }
   
-  table tr td {
+  .feedback__window table tr td {
 	border: none;
   }
   
-  table {
+  .feedback__window table {
 	background: url(/images/cloud.png) no-repeat;
 	background-position: right top;
 	background-size: 50px;

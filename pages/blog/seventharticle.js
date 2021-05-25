@@ -495,4 +495,4 @@ export default function SeventhArticle(props) {
       </section>
     </Layout>
   );
-}
+};
