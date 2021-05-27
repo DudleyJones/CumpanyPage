@@ -1,8 +1,7 @@
-import Layout from "../../components/Layout";
-import Head from "next/head";
-import React, { Fragment } from "react";
 import Link from "next/link";
+import Layout from "../../components/Layout";
 import "../../css/article.css";
+import Head from "next/head";
 
 export default function ThirdArticle(props) {
   const meta = {

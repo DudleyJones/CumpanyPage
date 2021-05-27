@@ -1,8 +1,8 @@
-import "../css/contacts.css";
-import Layout from "../components/Layout";
-import Head from "next/head";
-import React, { Fragment } from "react";
 import Link from "next/link";
+import Layout from "../components/Layout";
+import "../css/contacts.css";
+import Head from "next/head";
+
 
 export default function Contacts(props) {
   const meta = {

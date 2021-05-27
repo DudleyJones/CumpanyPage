@@ -8,7 +8,6 @@ import Why from "../components/Why";
 import Abo from "../components/Abo";
 import Mblog from "../components/Mblog";
 import Head from 'next/head';
-import React,{Fragment} from 'react';
 
 export default function MainPage(props) {
 	const meta={

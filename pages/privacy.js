@@ -1,7 +1,6 @@
+import Link from "next/link";
 import Layout from "../components/Layout";
 import Head from "next/head";
-import React, { Fragment } from "react";
-import Link from "next/link";
 
 export default function PrivacyPolicy(props) {
   const meta = {
