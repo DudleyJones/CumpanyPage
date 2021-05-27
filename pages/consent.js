@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
-import Head from "next/head";
+ 
 
 export default function Consent(props) {
   const meta = {
